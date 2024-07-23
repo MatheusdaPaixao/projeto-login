@@ -14,64 +14,111 @@
 }
 
 html,body{
-
     background-color: indigo;
 }
 
 main{
-    position: relative;
-    width: 100vw;
     height: 100vh;
-}
-section#login{
-    position: absolute;
+    width: 100vw;
+    margin: auto;
     width: 250px;
-    height: 515px;
-    overflow: hidden;
-
-    background-color: white;
+    height: 525px;
     border-radius: 20px;
-
+    background-color: white;
+    box-shadow: 0px 0px 5px #000000ba;
+    position: absolute;
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 }
-
-section#login > div#imagem{
+div#imagem{
     display: block;
     background-image: url('../imagens/predio.jpg');
     background-repeat: no-repeat;
+    background-position: center right;
     background-size: cover;
-    background-position: top center;
+    width: 250px;
     height: 200px;
-}
-#iemail, #isenha{
-    
-    background-color: #00afb9;
-    border-radius: 10px;
-    box-shadow: none;
-    width: 150px;
-    padding: 7px;
-    margin-top: 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
 
 }
-form p{
-    background-color: indigo;
-    width: 220px;
-    height: 40px;
-    margin: auto;
-    margin-top: 5px;
-    box-shadow: none;
-    border-radius: 10px;
-}
 
-h1{
+div#formulario h1{
     text-align: center;
-    padding-top: 10px;
-    font-weight: bolder;
+    padding: 15px;
 }
-p{
-    font-size: small;
-    padding-left: 10px;
+div#formulario p{
+    padding-left: 8px;
+    font-size: 0.8em;
 }
+
+form > p{
+    background-color: indigo;
+    padding: 10px;
+    width: 210px;
+    height: 20px;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+
+#iemail, #isenha{
+    background-color: rgb(24, 190, 190);
+    border-color: transparent;
+    width: 175px;
+    height: 32px;
+    border-radius: 8px;
+    margin-top: -7px;
+    
+    position: absolute;
+    right: 13px;
+}
+#buttom-entrar{
+    display: block;
+    background-color: rgb(32, 138, 138);
+    color: white;
+    font-size: 1em;
+
+    width: 229px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: auto;
+    margin-top: 5px;   
+}
+
+#buttom-entrar:hover{
+    background-color: rgb(19, 82, 82);
+    cursor: pointer;
+}
+
+a{
+    display: block;
+    margin: auto;
+    margin-top: 5px;    
+    color: rgb(34, 109, 109);;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 229px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(32, 138, 138);
+}
+
+a:hover{
+    background-color: rgb(17, 182, 182);
+}
+
+a p{
+    padding-top: 7px;
+}
+
+::placeholder{
+    padding-left: 3px;
+    font-size: 1.2em;
+}
+
+    

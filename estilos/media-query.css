@@ -1,0 +1,18 @@
+@charset "UTF-08";
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #C8B8DB, #C2DBE0);
+    }
+
+    main{
+        width: 700px;
+        height: 280px;
+    }
+
+    section#login{
+        
+    }
+}
