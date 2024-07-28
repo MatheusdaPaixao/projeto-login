@@ -11,114 +11,52 @@
     margin: 0px;
     padding: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 html,body{
     background-color: indigo;
+    height: 100vh;
+    width: 100vw;
 }
 
 main{
+    position: relative;
     height: 100vh;
     width: 100vw;
-    margin: auto;
-    width: 250px;
-    height: 525px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 5px #000000ba;
+}
+
+section#login{
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 
-    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.450);
+
+    transition: width 0.3s, heigth 0.3s;
+    transition-timing-function: ease;
 }
 div#imagem{
     display: block;
-    background-image: url('../imagens/predio.jpg');
-    background-repeat: no-repeat;
-    background-position: center right;
+    background: indigo url('../imagens/predio.jpg');
     background-size: cover;
-    width: 250px;
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;   
+    background-position: center center;
+    height: 200px; 
 
 }
 
-div#formulario h1{
-    text-align: center;
-    padding: 15px;
-}
-div#formulario p{
-    padding-left: 8px;
-    font-size: 0.8em;
-}
-
-form > p{
-    background-color: indigo;
+div#formulario{
+    display: block;
     padding: 10px;
-    width: 210px;
-    height: 20px;
-    margin: auto;
-    border-radius: 8px;
-    margin-top: 7px;
 }
 
-#iemail, #isenha{
-    background-color: rgb(24, 190, 190);
-    border-color: transparent;
-    width: 175px;
-    height: 32px;
-    border-radius: 8px;
-    margin-top: -7px;
-    
-    position: absolute;
-    right: 13px;
-}
-#buttom-entrar{
-    display: block;
-    background-color: rgb(32, 138, 138);
-    color: white;
-    font-size: 1em;
 
-    width: 229px;
-    height: 40px;
-    border-radius: 5px;
-    border-color: transparent;
-    margin: auto;
-    margin-top: 5px;   
-}
 
-#buttom-entrar:hover{
-    background-color: rgb(19, 82, 82);
-    cursor: pointer;
-}
-
-a{
-    display: block;
-    margin: auto;
-    margin-top: 5px;    
-    color: rgb(34, 109, 109);;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em;
-    width: 229px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid 1px rgb(32, 138, 138);
-}
-
-a:hover{
-    background-color: rgb(17, 182, 182);
-}
-
-a p{
-    padding-top: 7px;
-}
-
-::placeholder{
-    padding-left: 3px;
-    font-size: 1.2em;
-}
 
     

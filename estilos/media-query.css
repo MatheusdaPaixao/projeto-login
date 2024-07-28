@@ -3,16 +3,45 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-    body{
-        background-image: linear-gradient(to top, #C8B8DB, #C2DBE0);
-    }
 
-    main{
-        width: 700px;
-        height: 280px;
+    body{
+        background-image: linear-gradient(top top, #49a09d, #5f2c82);
     }
 
     section#login{
-        
+        width: 80vw;
+    }
+
+    div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body{
+        background-image: linear-gradient(top top, #49a09d, #5f2c82);
+    }
+
+    section#login{
+        width: 950px;
+
+    }
+
+    div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#formulario{
+        float: right;
+        width: 50%;
     }
 }
